@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style> 
         body {
-            background-color: #993399;
+            background-color: #808080; /* Cinza */
             color: #ffffff;
             font-family: 'Poppins', sans-serif;
             display: flex;
@@ -31,7 +31,7 @@
             width: 90%;
             max-width: 1200px;
             padding: 40px;
-            background-color: #87CEFA;
+            background-color: #A9A9A9; /* Cinza Claro */
             border-radius: 20px;
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
             transition: transform 0.3s ease;
@@ -48,7 +48,7 @@
         }
 
         .description {
-            color: #bbb;
+            color: #ffffff; /* Branca */
             font-size: 18px;
             margin-top: 10px;
             padding: 0 100px;
@@ -57,7 +57,7 @@
         }
 
         .button {
-            background-color: #A020F0;
+            background-color: #808080; /* Cinza */
             border: none;
             color: white;
             padding: 15px 0;
@@ -76,7 +76,7 @@
         }
 
         .button:hover {
-            background-color: #FFFFFF;
+            background-color: #D3D3D3; /* Cinza Claro */
             transform: translateY(-5px);
         }
 
@@ -128,27 +128,27 @@
         }
 
         .extra-button.sobre-mim {
-            background-color: #87CEFA;
+            background-color: #A9A9A9; /* Cinza Claro */
         }
 
         .extra-button.sobre-mim:hover {
-            background-color: #666666;
+            background-color: #696969; /* Cinza Escuro */
         }
 
         .extra-button.doacoes {
-            background-color: #28a745;
+            background-color: #6c757d; /* Cinza */
         }
 
         .extra-button.doacoes:hover {
-            background-color: #218838;
+            background-color: #495057; /* Cinza Escuro */
         }
 
         .extra-button.discord {
-            background-color: #7289da;
+            background-color: #4e555b; /* Cinza Escuro */
         }
 
         .extra-button.discord:hover {
-            background-color: #5f73a1;
+            background-color: #343a40; /* Cinza Muito Escuro */
         }
 
         .footer {
@@ -249,6 +249,14 @@
             margin-right: 15px;
             font-size: 30px;
         }
+
+        /* Estilo específico para o Instagram */
+        .extra-button.instagram {
+            background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #F7B928, #ffffff);
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
     </style>
 </head>
 <body>
@@ -266,6 +274,7 @@
             <div class="bottom-buttons">
                 <a href="https://github.com/marcos10pc/Alura-Destroyer" class="button"><i class="fas fa-laptop-code"></i> Alura</a>
                 <a  href="https://www.instagram.com/luizinho.ws?igsh=ZjZlbTRrY2lybW9l" class="extra-button instagram"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
         </div>
 
         <div class="footer">
