@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CMSP Plataformas Hacks - Encontre hacks, scripts e recursos para facilitar suas tarefas nas plataformas da Sala do Futuro e muito mais!">
+    <meta name="keywords" content="CMSP, hacks, scripts, sala do futuro, Khan Academy, Alura, Matific, SPeak, MeSalva, educação, aprendizagem, ferramentas, estudos, scripts educativos, hack para plataforma, performance de aprendizado, facilitação de tarefas, hacks Sala do Futuro, recursos educacionais">
+    <meta name="author" content="DarkMode e ChatGPT">
+    <title>CMSP Hacks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style> 
+        body {
+            background-color: #1E1E1E;
+            color: #ffffff;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            overflow: hidden;
+            user-select: none;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+            max-width: 1200px;
+            padding: 40px;
+            background-color: #222222;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+            transition: transform 0.3s ease;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: fadeIn 2s ease-out;
+        }
+
+        .description {
+            color: #bbb;
+            font-size: 18px;
+            margin-top: 10px;
+            padding: 0 100px;
+            font-weight: 400;
+            animation: fadeIn 2s ease-out 0.5s;
+        }
+
+        .button {
+            background-color: #6A0DAD;
+            border: none;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 200px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            gap: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .button:hover {
+            background-color: #4B0082;
+            transform: translateY(-5px);
+        }
+
+        .buttons-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .top-buttons, .bottom-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            width: 100%;
+        }
+
+        .extra-buttons-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+            width: 100%;
+            border-top: 2px solid #555;
+            padding-top: 20px;
+        }
+
+        .extra-button {
+            border: none;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 180px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            gap: 10px;
+        }
+
+        .extra-button:hover {
+            transform: translateY(-5px);
+        }
+
+        .extra-button.sobre-mim {
+            background-color: #505050;
+        }
+
+        .extra-button.sobre-mim:hover {
+            background-color: #666666;
+        }
+
+        .extra-button.doacoes {
+            background-color: #28a745;
+        }
+
+        .extra-button.doacoes:hover {
+            background-color: #218838;
+        }
+
+        .extra-button.discord {
+            background-color: #7289da;
+        }
+
+        .extra-button.discord:hover {
+            background-color: #5f73a1;
+        }
+
+        .footer {
+            position: absolute;
+            left: 20px;
+            bottom: 20px;
+            color: #bbb;
+            font-size: 14px;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .button, .extra-button {
+                width: 150px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .buttons-container .top-buttons,
+            .buttons-container .bottom-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .description {
+                padding: 0 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            .description {
+                font-size: 16px;
+            }
+
+            .footer {
+                font-size: 12px;
+            }
+        }
+
+        .notificacao {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #333;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 8px;
+            font-size: 16px;
+            display: none;
+            z-index: 1000;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+            animation: slideIn 0.5s forwards;
+            max-width: 300px;
+            width: auto;
+            line-height: 1.5;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                right: -350px;
+            }
+            to {
+                opacity: 1;
+                right: 20px;
+            }
+        }
+
+        @keyframes fadeOut {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+            }
+        }
+
+        .notificacao .icone {
+            margin-right: 15px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1 id="typewriter"></h1>
+        <p class="description">Nesse site você encontrará hacks, scripts ou sites para "facilitar" a realização das suas tarefas nas plataformas da sala do futuro. Nenhum dos scripts foi criado por mim, estou apenas divulgando eles para vocês.</p>
+
+        <div class="buttons-container">
+            <div class="top-buttons">
+                <a href="https://POR_MOTIVOS_PESSOAIS_TIVE_QUE_FECHAR_TEMPORARIAMENTE_O_SITE/" class="button"><i class="fas fa-school"></i> Sala do Futuro</a>
+                <a href="https://github.com/DarkMod3/KhanFucker" class="button"><i class="fas fa-graduation-cap"></i> Khan Academy</a>
+                <a href="https://speakify.cupiditys.lol/" class="button"><i class="fas fa-comments"></i> SPeak</a>
+            </div>
+
+            <div class="bottom-buttons">
+                <a href="https://github.com/marcos10pc/Alura-Destroyer" class="button"><i class="fas fa-laptop-code"></i> Alura</a>
+                <a  href="https://www.instagram.com/luizinho.ws?igsh=ZjZlbTRrY2lybW9l" class="extra-button instagram"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+
+        <div class="footer">
+
+        </div>
+    </div>
+
+    <div class="notificacao">
+        <span class="icone"><i class="fas fa-info-circle"></i></span> Isso deu trabalho!
+    </div>
+
+    <script>
+        function typeWriter(elementId, text, speed) {
+            let i = 0;
+            let element = document.getElementById(elementId);
+            function typingEffect() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(typingEffect, speed);
+                }
+            }
+            typingEffect();
+        }
+
+        typeWriter("typewriter", "CMSP Plataformas Hacks", 150);
+
+        setTimeout(function() {
+            document.querySelector('.notificacao').style.display = 'flex';
+            setTimeout(function() {
+                document.querySelector('.notificacao').style.animation = 'fadeOut 0.5s forwards';
+                setTimeout(function() {
+                    document.querySelector('.notificacao').style.display = 'none';
+                }, 500);
+            }, 5000);
+        }, 1000);
+
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+    </script>
+</body>
+</html>
